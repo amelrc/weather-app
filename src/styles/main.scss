@@ -1,0 +1,99 @@
+@import './variables.scss';
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+.background {
+    padding: 68px;
+    box-sizing: border-box;
+    height: 100vh;
+    &__image {
+        display: flex;
+        flex-flow: row-reverse;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        background-position: bottom;
+    }
+}
+
+.clear {
+    background: linear-gradient(to bottom, $aqua ,$blue);
+}
+.rain {
+    background: linear-gradient(to bottom, $dark-blue ,$purple);
+}
+.clouds {
+    background: linear-gradient(to bottom, $blue, $purple);
+}
+.snow {
+    background: linear-gradient(to bottom, $blue, $violet);
+}
+.drizzle {
+    background: linear-gradient(to bottom, $dark-blue, $gray);
+}
+.thunderstorm {
+    background: linear-gradient(to bottom, $purple ,$violet);
+}
+
+.weather {
+    text-align: center;
+    padding: 40px 0;
+    margin: 20px;
+    width: 50%;
+}
+
+.city, .temperature, .description, .error {
+    @include Text;
+    font-weight: 100;
+}
+
+.city {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.temperature {
+    font-size: 120px;
+}
+
+.description {
+    margin: 68px 0;
+}
+
+.form {
+    text-align: center;
+    margin: 64px 0;
+    width: 50%;
+    align-self: flex-end;
+}
+
+.input {
+    width: 288px;
+    padding: 12px 20px;
+    margin: 24px 0;
+    box-sizing: border-box;
+    background: transparent;
+    font-weight: 100;
+    @include Text;
+    border-bottom: 2px solid $white;
+    text-align: center;
+    width: 68%;
+    &::placeholder {
+        color: $white;
+    }
+}
+
+.button {
+    width: 248px;
+    height: 48px;
+    background-color: $red;
+    cursor: pointer;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    @include Text;
+   
+}
+
