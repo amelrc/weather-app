@@ -50,6 +50,7 @@
     font-weight: 100;
 }
 
+
 .city {
     font-size: 40px;
     margin-bottom: 20px;
@@ -76,11 +77,12 @@
     margin: 24px 0;
     box-sizing: border-box;
     background: transparent;
-    font-weight: 100;
+    font-weight: normal;
     @include Text;
     border-bottom: 2px solid $white;
     text-align: center;
     width: 68%;
+    font-size: 24px;
     &::placeholder {
         color: $white;
     }
@@ -97,3 +99,49 @@
    
 }
 
+@media only screen 
+and (max-width : 414px) 
+and (orientation : portrait) {
+
+    .background {
+        padding: 0;
+        overflow: hidden;
+        &__image {
+            flex-flow: column;
+            align-items: center;
+            padding: 10px;
+        }
+    }
+    .weather, .form {
+        width: 100%;
+    }
+
+    .weather {
+        margin: 0;
+    }
+}
+
+@media only screen 
+and (max-width : 375px) 
+and (orientation : portrait) {
+
+    .description {
+        margin: 48px 0;
+    }
+
+    .form {
+        margin: 24px 0;
+    }
+}
+
+@media only screen 
+and (max-width : 320px) 
+and (orientation : portrait) {
+
+    .description {
+        margin: 24px 0;
+    }
+    .form {
+        margin: 0;
+    }
+}
