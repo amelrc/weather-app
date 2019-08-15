@@ -1,8 +1,5 @@
 import React from "react";
 
-
-
-
 const Weather = props => (
 
     <div className={`weather ${props.className} `}>

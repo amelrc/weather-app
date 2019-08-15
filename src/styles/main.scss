@@ -95,14 +95,10 @@
     cursor: pointer;
     border-radius: 25px;
     letter-spacing: 1px;
-    @include Text;
-   
+    @include Text;  
 }
 
-@media only screen 
-and (max-width : 414px) 
-and (orientation : portrait) {
-
+@media (max-width : 768px) {
     .background {
         padding: 0;
         overflow: hidden;
@@ -115,29 +111,12 @@ and (orientation : portrait) {
     .weather, .form {
         width: 100%;
     }
-
     .weather {
         margin: 0;
     }
 }
 
-@media only screen 
-and (max-width : 375px) 
-and (orientation : portrait) {
-
-    .description {
-        margin: 48px 0;
-    }
-
-    .form {
-        margin: 24px 0;
-    }
-}
-
-@media only screen 
-and (max-width : 320px) 
-and (orientation : portrait) {
-
+@media (max-width : 320px) {
     .description {
         margin: 24px 0;
     }
