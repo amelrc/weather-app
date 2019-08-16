@@ -54,7 +54,6 @@ class App extends React.Component {
 
   
   render() {
-    console.log(this.state.description);
     return (
       <div className={`background ${imageBG[`${this.state.description}`][1]}`}>
         <Backgound image={`url(${imageBG[this.state.description][0]})`}>
